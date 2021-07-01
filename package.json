@@ -1,0 +1,19 @@
+{
+  "name": "checkHerokuServerApiHealth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha --timeout 999999 --exit"
+  },
+  "keywords": [],
+  "author": "Gengxin Li <Ligengxin96@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^9.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
