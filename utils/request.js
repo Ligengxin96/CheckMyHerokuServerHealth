@@ -7,7 +7,7 @@ const request = async(url, retryCount = 16) => {
       const timer = setInterval(async() => {
         try {
           const response = await axios.get(url);
-          console.log(`${new Date()}: ${tryCount + 1} times request ${url}`);
+          console.log(`${new Date()}: the ${tryCount + 1} times request ${url}`);
           if (++tryCount === retryCount) {
             clearInterval(timer);
             reject(new Error('No response from server, please check your server health.'));
@@ -15,7 +15,7 @@ const request = async(url, retryCount = 16) => {
           clearInterval(timer);
           resolve(response.data);
         } catch (error) {
-          console.log(`${new Date()}: ${tryCount + 1} times request ${url} failed with error: ${error.message}`);
+          console.log(`${new Date()}: the ${tryCount + 1} times request ${url} failed with error: ${error.message}`);
         }
       }, (tryCount + 1)  * 1 * 1000);
     });
