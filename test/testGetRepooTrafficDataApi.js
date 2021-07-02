@@ -5,7 +5,6 @@ import repooTrafficDataApi from '../config/getRepoTrafficDataApi.js';
 
 describe('test get repoo traffic data api health', function() {
   it('api should return data successful', async function() {
-    this.retries(5);
     try {
       for (const api of repooTrafficDataApi) {
         const result = await request(api);
