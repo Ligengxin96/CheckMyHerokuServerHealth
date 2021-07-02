@@ -6,7 +6,7 @@ const request = async(url, retryCount = 16) => {
     return new Promise((resolve) => {
       const timer = setInterval(async() => {
         const response = await axios.get(url);
-        console.log(`Request ${url} ${tryCount + 1} times.`);
+        console.log(`${new Date()} request ${url} ${tryCount + 1} times.`);
         if (++tryCount === retryCount) {
           clearInterval(timer);
           throw new Error('No response from server, please check your server health.');
