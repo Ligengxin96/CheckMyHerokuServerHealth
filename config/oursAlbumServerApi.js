@@ -1,3 +1,3 @@
 export default [
-  'https://ours-album-server.herokuapp.com/v1/post'
+  'https://ligengxin-server.top/Ours-Album/v1/post/?title=&tags=ZH-CN&currentPage=1'
 ]
