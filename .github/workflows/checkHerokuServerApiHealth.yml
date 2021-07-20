@@ -2,7 +2,7 @@ name: Check Heroku Server Api Health
 
 on:
   schedule:
-    - cron: "0 3 * * *"
+    - cron: "30 8,18 * * *"
   push:
     branches:
       - main
