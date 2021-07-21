@@ -7,7 +7,7 @@ on:
     branches:
       - main
     paths:
-      - .github/workflows/checkHerokuServerApiHealth.yml
+      - .github/workflows/checkServerApiHealth.yml
 
 jobs:
   markscribe:
