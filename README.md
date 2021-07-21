@@ -1,2 +1,2 @@
-# CheckMyHerokuServerHealth
-Call my Heroku server regularly to keep it alive
+# CheckMyServerApiHealth
+Call my server regularly to check it health
