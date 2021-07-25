@@ -1,4 +1,4 @@
-name: Check Heroku Server Api Health
+name: Check Server Api Health
 
 on:
   schedule:
