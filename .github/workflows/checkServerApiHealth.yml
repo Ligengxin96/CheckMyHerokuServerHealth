@@ -2,7 +2,7 @@ name: Check Server Api Health
 
 on:
   schedule:
-    - cron: "30 0,10 * * *"
+    - cron: "30 0,5,10 * * *"
   push:
     branches:
       - main
